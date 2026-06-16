@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mukesh Patel Tiffin Service</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --primary:#ff6b35;
+    --primary-dark:#e85a24;
+    --secondary:#ff914d;
+    --bg:#fff7f2;
+    --dark:#1f2937;
+    --white:#ffffff;
+    --shadow:0 12px 35px rgba(0,0,0,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:#333;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#ff6b35,#ff914d);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:clamp(2rem,5vw,4rem);
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    max-width:700px;
+    margin:auto;
+    opacity:.95;
+}
+
+.price-badge{
+    display:inline-block;
+    margin-top:25px;
+    background:white;
+    color:var(--primary);
+    padding:12px 25px;
+    border-radius:50px;
+    font-weight:700;
+    font-size:1.2rem;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-call{
+    background:white;
+    color:var(--primary);
+}
+
+.btn-menu{
+    border:2px solid white;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* SECTION */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    font-size:2rem;
+    color:var(--dark);
+}
+
+.section-title p{
+    color:#666;
+    margin-top:8px;
+}
+
+/* MENU GRID */
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.menu-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+.day{
+    background:linear-gradient(135deg,#ff6b35,#ff914d);
+    color:white;
+    padding:16px;
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+.food{
+    padding:20px;
+    font-size:15px;
+    color:#555;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.contact h2{
+    margin-bottom:10px;
+}
+
+.contact-number{
+    font-size:2rem;
+    font-weight:700;
+    color:#ffb27d;
+    margin:20px 0;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.call-btn,
+.whatsapp-btn{
+    text-decoration:none;
+    color:white;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.call-btn{
+    background:var(--primary);
+}
+
+.whatsapp-btn{
+    background:#25D366;
+}
+
+/* FLOAT BUTTON */
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f172a;
+    color:#ccc;
+    text-align:center;
+    padding:18px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+    padding:60px 15px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.btn{
+    width:100%;
+    max-width:280px;
+}
+
+.contact-number{
+    font-size:1.6rem;
+}
+
+.call-btn,
+.whatsapp-btn{
+    width:100%;
+    max-width:280px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <h1>Mukesh Patel Tiffin Service</h1>
+
+    <p>
+        à¤…à¤¬ à¤˜à¤° à¤µà¤¾à¤²à¤¾ à¤¸à¥à¤µà¤¾à¤¦ à¤®à¤¾à¤¤à¥à¤° â‚¹50 à¤®à¥‡à¤‚à¥¤
+        à¤¤à¤¾à¤œà¤¼à¤¾, à¤¸à¥à¤µà¤¾à¤¦à¤¿à¤·à¥à¤Ÿ à¤”à¤° à¤ªà¥Œà¤·à¥à¤Ÿà¤¿à¤• à¤­à¥‹à¤œà¤¨ à¤¹à¤° à¤¦à¤¿à¤¨à¥¤
+    </p>
+
+    <div class="price-badge">
+        â‚¹50 à¤ªà¥à¤°à¤¤à¤¿ à¤Ÿà¤¿à¤«à¤¿à¤¨
+    </div>
+
+    <div class="hero-buttons">
+
+        <a href="tel:+919696460583" class="btn btn-call">
+            ðŸ“ž Call Now
+        </a>
+
+        <a href="#menu" class="btn btn-menu">
+            ðŸ½ View Menu
+        </a>
+
+    </div>
+
+</section>
+
+<!-- MENU -->
+
+<section class="section" id="menu">
+
+    <div class="section-title">
+        <h2>à¤¸à¤¾à¤ªà¥à¤¤à¤¾à¤¹à¤¿à¤• à¤®à¥‡à¤¨à¥à¤¯à¥‚</h2>
+        <p>à¤¹à¤° à¤¦à¤¿à¤¨ à¤…à¤²à¤— à¤”à¤° à¤¸à¥à¤µà¤¾à¤¦à¤¿à¤·à¥à¤Ÿ à¤­à¥‹à¤œà¤¨</p>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"></div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+    <h2>à¤‘à¤°à¥à¤¡à¤° à¤•à¤°à¤¨à¥‡ à¤•à¥‡ à¤²à¤¿à¤ à¤¸à¤‚à¤ªà¤°à¥à¤• à¤•à¤°à¥‡à¤‚</h2>
+
+    <div class="contact-number">
+        ðŸ“± 9696460583
+    </div>
+
+    <div class="contact-buttons">
+
+        <a href="tel:+919696460583" class="call-btn">
+            ðŸ“ž Call Now
+        </a>
+
+        <a
+        href="https://wa.me/919696460583?text=Hello%20Mukesh%20Patel%20Tiffin%20Service,%20I%20want%20to%20order%20a%20tiffin."
+        target="_blank"
+        class="whatsapp-btn">
+
+            ðŸ’¬ WhatsApp
+
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    Â© 2025 Mukesh Patel Tiffin Service | All Rights Reserved
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+href="https://wa.me/919696460583?text=Hello%20Mukesh%20Patel%20Tiffin%20Service"
+target="_blank"
+class="floating-whatsapp">
+ðŸ’¬
+</a>
+
+<script>
+
+const menuData = [
+
+{
+day:"à¤¸à¥‹à¤®à¤µà¤¾à¤°",
+food:"à¤¦à¤¾à¤², à¤šà¤¾à¤µà¤², à¤¸à¤¬à¥à¤œà¥€, 4 à¤°à¥‹à¤Ÿà¥€"
+},
+
+{
+day:"à¤®à¤‚à¤—à¤²à¤µà¤¾à¤°",
+food:"à¤•à¤¢à¤¼à¥€, à¤šà¤¾à¤µà¤², 4 à¤°à¥‹à¤Ÿà¥€"
+},
+
+{
+day:"à¤¬à¥à¤§à¤µà¤¾à¤°",
+food:"5 à¤†à¤²à¥‚ à¤ªà¤°à¤¾à¤ à¤¾, à¤šà¤Ÿà¤¨à¥€"
+},
+
+{
+day:"à¤—à¥à¤°à¥à¤µà¤¾à¤°",
+food:"à¤¦à¤¾à¤², à¤šà¤¾à¤µà¤², à¤¸à¤¬à¥à¤œà¥€, 4 à¤°à¥‹à¤Ÿà¥€"
+},
+
+{
+day:"à¤¶à¥à¤•à¥à¤°à¤µà¤¾à¤°",
+food:"à¤›à¥‹à¤²à¤¾, à¤šà¤¾à¤µà¤², à¤ªà¥‚à¤°à¥€"
+},
+
+{
+day:"à¤¶à¤¨à¤¿à¤µà¤¾à¤°",
+food:"à¤¸à¤¬à¥à¤œà¥€, 5 à¤¸à¤¾à¤¦à¤¾ à¤ªà¤°à¤¾à¤ à¤¾"
+},
+
+{
+day:"à¤°à¤µà¤¿à¤µà¤¾à¤°",
+food:"à¤ªà¤¨à¥€à¤°, à¤ªà¥‚à¤°à¥€, à¤šà¤¾à¤µà¤²"
+}
+
+];
+
+const menuGrid = document.getElementById("menuGrid");
+
+menuData.forEach(item=>{
+
+menuGrid.innerHTML += `
+<div class="menu-card">
+    <div class="day">${item.day}</div>
+    <div class="food">${item.food}</div>
+</div>
+`;
+
+});
+
+</script>
+
+</body>
+</html>
